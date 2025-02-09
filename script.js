@@ -5,3 +5,7 @@ menu.onclick=()=>{
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
 }
+
+function goToBooking() {
+    window.location.href = "book.html";
+}

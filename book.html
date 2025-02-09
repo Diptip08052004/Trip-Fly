@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="bookstyle.css">
+</head>
+<body>
+
+    <div class="booking-container">
+        <div class="image-section">
+            <img src="images/travel1.jpg" alt="Yoga Group">
+        </div>
+
+        <div class="form-section">
+            <h2>Book Now</h2>
+            <form action="#" method="POST">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="number">Your Number</label>
+                        <input type="tel" id="number" name="number" placeholder="Enter your number" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="date">DOB</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Your Message (Optional)</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
