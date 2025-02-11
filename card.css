@@ -1,0 +1,103 @@
+/* Global Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f6e8d6, #f6cfc2);
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+    overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+}
+
+/* Container Styling */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Heading Style */
+h1 {
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Side Scrolling Image Gallery */
+.image-scroller {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    color: #f5f1f1;
+}
+
+/* Image Track (to hold images in a row) */
+.image-track {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+
+/* Big Image Styling */
+.big-image {
+    height: 300px;
+    width: 450px; /* Adjust the width as needed */
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.big-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Description Styling */
+.description {
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Travel Info Section */
+.travel-info {
+    margin-top: 20px;
+    text-align: left;
+    padding: 15px;
+    background: #ffe5d9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Travel Info Heading */
+.travel-info h2 {
+    color: #d65a31;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Travel Info Text */
+.travel-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

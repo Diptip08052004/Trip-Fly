@@ -8,24 +8,63 @@
     <link rel="stylesheet" href="style.css">
     
     <script src="script.js"></script>
+    <script>
+        const messages = [
+            "✈️ Pack your bags... and your patience! Airports are wild. 😂",
+            "🏨 Hotels have free soap. Bring a big bag. (Just kidding... or am I?) 🤭",
+            "🧳 Packing all things? Impossible. You might need it. 😆",
+            "👀 Travel rule #1: If you didn’t post it on Instagram, did it even happen? 📸",
+            "🌍 They say money can’t buy happiness, but it can buy plane tickets... same thing, right? 😉",
+            "💑 Traveling with your crush makes every place feel like home. ❤️",
+            "🌅 Watching the sunset is beautiful, but watching it with you is magical. ✨",
+            "🛫 I don’t need a travel guide… just your hand to hold. 💕",
+            "🏝️ Let’s get lost together in a place where love is the only map we need. 🗺️❤️",
+            "💏 No matter where we go, my favorite destination will always be you. 😘",
+            "✨ Traveling alone is fun, but traveling with you makes my heart go on an adventure. 💞",
+            "🌍 The world is big, but my heart belongs wherever you are. 💘"
+        ];
+
+        window.onload = function () {
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            document.getElementById("popup-message").innerText = randomMessage;
+            document.getElementById("popup").style.display = "block";
+        };
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+    
 </head>
 <body>
     <header class="header">
         <section class="flex">
-            <a href="#home" class="logo"><img src="images/backpack-unscreen.gif" alt=""></a>
+
+            <div class="logo-container">
+                <a href="#home" class="logo"><img src="images/backpack-unscreen.gif" alt=""></a>
+                <h1>TripFly</h1>
+            </div>
+
+            <div id="overlay"></div>
+            <div id="popup">
+                <p id="popup-message"></p>
+                <button onclick="closePopup()">OK &#128540;</button>
+            </div>
+            
             <nav class="navbar">
                 <a href="#home">home</a>
                 <a href="#about">about</a>
                 <a href="#menu">Mission</a>
                 <a href="#gallery">contact</a>
-                <a href="book.html">book</a>
+                <a href="#profile">Profile</a>
+                <!-- <a href="#profile"><img src="images/human.png" alt=""></a> -->
             </nav>
 
             <div id="menu-btn" class="fas fa-bars"></div>
 
         </section>
     </header>
-
+      
 
     <div class="container">
         <div class="left-content">
@@ -56,15 +95,15 @@
         <p>At our travel booking platform, we are passionate about helping you create unforgettable memories</p>
         <div class="image-container">
             <div class="image-box">
-                <img src="images/travel1.jpg" alt="Travel Beach">
+                <img src="images/travel1.jpg" alt="Travel Beach" onclick="location.href='card.html'">
                 <p>Discover a world of wonder with our carefully curated collection of travel experiences</p>
             </div>
             <div class="image-box">
-                <img src="images/travel1.jpg" alt="Mountain Sunset">
+                <img src="images/travel1.jpg" alt="Mountain Sunset" onclick="location.href='card.html'">
                 <p>Immerse yourself in the beauty of our destinations through our stunning visuals</p>
             </div>
             <div class="image-box">
-                <img src="images/travel1.jpg" alt="Ocean Island">
+                <img src="images/travel1.jpg" alt="Ocean Island" onclick="location.href='card.html'">
                 <p>Embark on a journey of a lifetime with our user-friendly booking platform</p>
             </div>
         </div>
